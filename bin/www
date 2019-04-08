@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-//默认的3000端口
+//default 4001 port
 var port = normalizePort(process.env.PORT || '4001');
 // app.set('port', port);
 
