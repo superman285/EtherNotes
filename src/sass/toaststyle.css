@@ -1,0 +1,10 @@
+
+.toast {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #66BB6A;
+    color: white;
+    padding: .3rem .5rem;
+}

@@ -1,0 +1,146 @@
+html {
+    font-size: 100%;
+}
+
+@media screen and (max-width: 420px) {
+    header a {
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 360px) {
+    header a   {
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 320px) {
+    header a  {
+        font-size: 70%;
+    }
+}
+
+body {
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #9236ff 0%,#f763c6 33%,#ff9292 66%,#fff7e1 100%);
+            /*linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));*/
+    min-width: 300px;
+}
+
+a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+    height: 60px;
+}
+.add-note {
+    margin-left: 1rem;
+
+}
+
+.add-note i {
+    font-size: 1.1rem;
+}
+
+.user-area {
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+.user-area>li {
+    margin-left: .5rem;
+}
+.usname {
+    display: none;
+    color: mediumpurple;
+    font-weight: bold;
+}
+.avater{
+    display: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+.guest {
+    display: none;
+    font-weight: bold;
+    color: mediumseagreen;
+}
+.line {
+    display: none;
+}
+.login,.logout {
+    display: none;
+}
+
+.user-area i {
+    font-size: 1.1rem;
+}
+
+#content {
+    min-height: calc(100vh - 60px)!important;
+}
+
+/*弹出窗口输入地址*/
+.popModal{
+    position: absolute;
+    z-index: 5;
+    top: 250px;
+    left: -450px;
+    transform: translate(-50%);
+    max-width: 450px;
+    width: 60%;
+    min-width: 320px;
+    height: 300px;
+    padding: 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px white;
+    background: rgba(0,0,0,.85);
+    overflow: hidden;
+    transition: all .4s linear;
+}
+.popModal.shown {
+    left: 50%;
+}
+.popModal h3 {
+    color: #FFFFFF;
+}
+.popModal input {
+    outline: none;
+    height: 34px;
+    width: 100%;
+    margin-top: 30px;
+    padding:0 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.popModal hr:nth-child(5) {
+    margin-top: 40px;
+}
+.popModal button {
+    float: right;
+    width: 80px!important;
+    height: 35px!important;
+    line-height: 35px!important;
+}
+
+button {
+    width: 122px;
+    margin-left: 10px !important;
+    padding: 0 15px !important;
+    font-weight: bold !important;
+    vertical-align: bottom !important;
+}
+button.roundbalance {
+    width: 150px;
+    margin-left: 25px!important;
+}

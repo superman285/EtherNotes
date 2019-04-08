@@ -1,0 +1,33 @@
+
+
+.note {
+  width: 15%;
+  min-width: 200px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 1px grey;
+  margin: 1rem 0;
+}
+
+.note-head {
+  height: 1.5rem;
+  &:hover .delete {
+    display: inline-block;
+    float: right;
+    margin-right: .5rem;
+    line-height: 1.3rem;
+  }
+  .delete {
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.note-ct {
+  padding: .5rem;
+  min-height: 5rem;
+}
+
+div {
+  border: none;
+  outline: none;
+}

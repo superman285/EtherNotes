@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>以太便签</title>
+    <link rel="stylesheet" href="../public/css/index.css"/>
+    <link rel="stylesheet" href="../public/css/buttons.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1041196_id02466l3ci.css"/>
+    <link rel="icon" href="../public/images/ethpng.png">
+</head>
+<body>
+<header id="header">
+    <a class="add-note" title="添加笔记" href="#"><i class="iconfont icon-add"></i>&nbsp;Add Note</a>
+    <ul class="user-area">
+        <li><img class="avater" src="../public/images/ethpng.png" alt=""></li>
+        <li><span class="usname" title="{{user.username}}">已登入</span></li>
+        <li><span class="line l1"> | </span></li>
+        <li><a class="logout" href="javascript:;">注销</a></li>
+        <li class="guest">游客</li>
+        <li><span class="line l2"> | </span></li>
+        <li><a class="login" title="以太登录" href="javascript:;"><i class="iconfont icon-ethereum"></i>账户登入</a>
+        </li>
+
+        <div class="popModal">
+            <h3>请输入账户地址&私钥</h3>
+            <hr>
+            <input type="text" class="addrInput" placeholder="账户地址">
+            <input type="text" class="keyInput" placeholder="私钥或助记词">
+            <hr>
+            <button class="ensureModal button button-primary button-rounded">确定</button>
+            <button class="unsureModal button button-rounded">取消</button>
+        </div>
+
+    </ul>
+</header>
+
+
+<div id="content">
+</div>
+
+<script src="../dist/bundle.js"></script>
+
+<script src="../dist/web3mod.js"></script>
+
+<script src="../dist/loginVerify.js"></script>
+
+
+</body>
+</html>
